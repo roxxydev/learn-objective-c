@@ -9,6 +9,37 @@
 #import "XYZBicycle.h"
 #import "XYZTricycle.h"
 
+static BOOL experimentLiterals() {
+    NSNumber *rad = @3.141516f;
+    NSNumber *booleanYes = @YES;
+    NSNumber *booleanNo = @NO;
+    NSNumber *longNum = @123456L;
+    NSNumber *boxNum = @(14/7);
+    NSLog(@"%@ %@ %@ %@ %@", rad, booleanYes, booleanNo, longNum, boxNum);
+    
+    return 0;
+}
+
+static BOOL experimentProtocol() {
+    id <XYZStreetLegal> mysteryVehicle = [[XYZBicycle alloc] init];
+    [mysteryVehicle signalRightTurn];
+    
+    // check if object 'mysteryVechicle' conforms to Protocol 'XYZStreetLegal'
+    if ([mysteryVehicle conformsToProtocol:@protocol(XYZStreetLegal)]) {
+        NSLog(@"mysteryVehicle conforms to XYZStreetLegal protocol");
+    }
+    
+    mysteryVehicle = [[XYZTricycle alloc] init];
+    [mysteryVehicle signalLeftTurn];
+    
+    // check if mysteryVehicle object implement Protocol optional method 'signalFullStop'
+    if ([mysteryVehicle respondsToSelector:@selector(signalFullStop)]) {
+        [mysteryVehicle signalFullStop];
+    }
+    
+    return 0;
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // Create default person
@@ -48,29 +79,8 @@ int main(int argc, const char * argv[]) {
         //pinoy = [person copy];
         //[pinoy sayHelloFilipino];
         
-        NSNumber *rad = @3.141516f;
-        NSNumber *booleanYes = @YES;
-        NSNumber *booleanNo = @NO;
-        NSNumber *longNum = @123456L;
-        NSNumber *boxNum = @(14/7);
-        NSLog(@"%@ %@ %@ %@ %@", rad, booleanYes, booleanNo, longNum, boxNum);
-        
-        
-        id <XYZStreetLegal> mysteryVehicle = [[XYZBicycle alloc] init];
-        [mysteryVehicle signalRightTurn];
-        
-        // check if object 'mysteryVechicle' conforms to Protocol 'XYZStreetLegal'
-        if ([mysteryVehicle conformsToProtocol:@protocol(XYZStreetLegal)]) {
-            NSLog(@"mysteryVehicle conforms to XYZStreetLegal protocol");
-        }
-        
-        mysteryVehicle = [[XYZTricycle alloc] init];
-        [mysteryVehicle signalLeftTurn];
-        
-        // check if mysteryVehicle object implement Protocol optional method 'signalFullStop'
-        if ([mysteryVehicle respondsToSelector:@selector(signalFullStop)]) {
-            [mysteryVehicle signalFullStop];
-        }
+        experimentLiterals();
+        experimentProtocol();
     }
     return 0;
 }
