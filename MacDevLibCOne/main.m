@@ -1,8 +1,13 @@
 #import <Foundation/Foundation.h>
 
 //#import "XYZPerson+XYZPersonDisplayAdditions.h"
+#import "XYZPerson.h"
 #import "XYZPerson_XYZAlien.h"
 #import "XYZFilipino.h"
+
+#import "XYZStreetLegal.h"
+#import "XYZBicycle.h"
+#import "XYZTricycle.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -49,6 +54,23 @@ int main(int argc, const char * argv[]) {
         NSNumber *longNum = @123456L;
         NSNumber *boxNum = @(14/7);
         NSLog(@"%@ %@ %@ %@ %@", rad, booleanYes, booleanNo, longNum, boxNum);
+        
+        
+        id <XYZStreetLegal> mysteryVehicle = [[XYZBicycle alloc] init];
+        [mysteryVehicle signalRightTurn];
+        
+        // check if object 'mysteryVechicle' conforms to Protocol 'XYZStreetLegal'
+        if ([mysteryVehicle conformsToProtocol:@protocol(XYZStreetLegal)]) {
+            NSLog(@"mysteryVehicle conforms to XYZStreetLegal protocol");
+        }
+        
+        mysteryVehicle = [[XYZTricycle alloc] init];
+        [mysteryVehicle signalLeftTurn];
+        
+        // check if mysteryVehicle object implement Protocol optional method 'signalFullStop'
+        if ([mysteryVehicle respondsToSelector:@selector(signalFullStop)]) {
+            [mysteryVehicle signalFullStop];
+        }
     }
     return 0;
 }

@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		869A490A1C19326400CA35AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 869A49091C19326400CA35AE /* main.m */; };
-		869A491A1C19350500CA35AE /* XYZPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 869A49191C19350500CA35AE /* XYZPerson.m */; };
-		86E70F7B1C1ECA1400448682 /* XYZFilipino.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E70F7A1C1ECA1400448682 /* XYZFilipino.m */; };
-		86F3BE691C30FBE00039B300 /* XYZPerson+XYZPersonDisplayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F3BE681C30FBE00039B300 /* XYZPerson+XYZPersonDisplayAdditions.m */; };
+		8647A2C31C36320B00EC21B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8647A2B51C36320B00EC21B1 /* main.m */; };
+		8647A2C41C36320B00EC21B1 /* XYZBicycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8647A2B81C36320B00EC21B1 /* XYZBicycle.m */; };
+		8647A2C51C36320B00EC21B1 /* XYZTricycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8647A2BB1C36320B00EC21B1 /* XYZTricycle.m */; };
+		8647A2C61C36320B00EC21B1 /* XYZFilipino.m in Sources */ = {isa = PBXBuildFile; fileRef = 8647A2BD1C36320B00EC21B1 /* XYZFilipino.m */; };
+		8647A2C71C36320B00EC21B1 /* XYZPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8647A2C01C36320B00EC21B1 /* XYZPerson.m */; };
+		8647A2C81C36320B00EC21B1 /* XYZPerson+XYZPersonDisplayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8647A2C21C36320B00EC21B1 /* XYZPerson+XYZPersonDisplayAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,15 +28,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8647A2B51C36320B00EC21B1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MacDevLibCOne/main.m; sourceTree = "<group>"; };
+		8647A2B71C36320B00EC21B1 /* XYZBicycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZBicycle.h; sourceTree = "<group>"; };
+		8647A2B81C36320B00EC21B1 /* XYZBicycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZBicycle.m; sourceTree = "<group>"; };
+		8647A2B91C36320B00EC21B1 /* XYZStreetLegal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZStreetLegal.h; sourceTree = "<group>"; };
+		8647A2BA1C36320B00EC21B1 /* XYZTricycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZTricycle.h; sourceTree = "<group>"; };
+		8647A2BB1C36320B00EC21B1 /* XYZTricycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZTricycle.m; sourceTree = "<group>"; };
+		8647A2BC1C36320B00EC21B1 /* XYZFilipino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZFilipino.h; path = MacDevLibCOne/XYZFilipino.h; sourceTree = "<group>"; };
+		8647A2BD1C36320B00EC21B1 /* XYZFilipino.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZFilipino.m; path = MacDevLibCOne/XYZFilipino.m; sourceTree = "<group>"; };
+		8647A2BE1C36320B00EC21B1 /* XYZPerson_XYZAlien.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZPerson_XYZAlien.h; path = MacDevLibCOne/XYZPerson_XYZAlien.h; sourceTree = "<group>"; };
+		8647A2BF1C36320B00EC21B1 /* XYZPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZPerson.h; path = MacDevLibCOne/XYZPerson.h; sourceTree = "<group>"; };
+		8647A2C01C36320B00EC21B1 /* XYZPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZPerson.m; path = MacDevLibCOne/XYZPerson.m; sourceTree = "<group>"; };
+		8647A2C11C36320B00EC21B1 /* XYZPerson+XYZPersonDisplayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "XYZPerson+XYZPersonDisplayAdditions.h"; path = "MacDevLibCOne/XYZPerson+XYZPersonDisplayAdditions.h"; sourceTree = "<group>"; };
+		8647A2C21C36320B00EC21B1 /* XYZPerson+XYZPersonDisplayAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "XYZPerson+XYZPersonDisplayAdditions.m"; path = "MacDevLibCOne/XYZPerson+XYZPersonDisplayAdditions.m"; sourceTree = "<group>"; };
 		869A49061C19326400CA35AE /* MacDevLibCOne */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MacDevLibCOne; sourceTree = BUILT_PRODUCTS_DIR; };
-		869A49091C19326400CA35AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		869A49181C19340F00CA35AE /* XYZPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZPerson.h; sourceTree = "<group>"; };
-		869A49191C19350500CA35AE /* XYZPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZPerson.m; sourceTree = "<group>"; };
-		86E70F791C1EC9A400448682 /* XYZFilipino.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZFilipino.h; sourceTree = "<group>"; };
-		86E70F7A1C1ECA1400448682 /* XYZFilipino.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZFilipino.m; sourceTree = "<group>"; };
-		86F3BE671C30FBE00039B300 /* XYZPerson+XYZPersonDisplayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XYZPerson+XYZPersonDisplayAdditions.h"; sourceTree = "<group>"; };
-		86F3BE681C30FBE00039B300 /* XYZPerson+XYZPersonDisplayAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XYZPerson+XYZPersonDisplayAdditions.m"; sourceTree = "<group>"; };
-		86F3BE731C3136CD0039B300 /* XYZPerson_XYZAlien.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZPerson_XYZAlien.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,10 +55,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8647A2B61C36320B00EC21B1 /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				8647A2B71C36320B00EC21B1 /* XYZBicycle.h */,
+				8647A2B81C36320B00EC21B1 /* XYZBicycle.m */,
+				8647A2B91C36320B00EC21B1 /* XYZStreetLegal.h */,
+				8647A2BA1C36320B00EC21B1 /* XYZTricycle.h */,
+				8647A2BB1C36320B00EC21B1 /* XYZTricycle.m */,
+			);
+			name = Vehicle;
+			path = MacDevLibCOne/Vehicle;
+			sourceTree = "<group>";
+		};
 		869A48FD1C19326400CA35AE = {
 			isa = PBXGroup;
 			children = (
-				869A49081C19326400CA35AE /* MacDevLibCOne */,
+				8647A2B51C36320B00EC21B1 /* main.m */,
+				8647A2B61C36320B00EC21B1 /* Vehicle */,
+				8647A2BC1C36320B00EC21B1 /* XYZFilipino.h */,
+				8647A2BD1C36320B00EC21B1 /* XYZFilipino.m */,
+				8647A2BE1C36320B00EC21B1 /* XYZPerson_XYZAlien.h */,
+				8647A2BF1C36320B00EC21B1 /* XYZPerson.h */,
+				8647A2C01C36320B00EC21B1 /* XYZPerson.m */,
+				8647A2C11C36320B00EC21B1 /* XYZPerson+XYZPersonDisplayAdditions.h */,
+				8647A2C21C36320B00EC21B1 /* XYZPerson+XYZPersonDisplayAdditions.m */,
 				869A49071C19326400CA35AE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,21 +90,6 @@
 				869A49061C19326400CA35AE /* MacDevLibCOne */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		869A49081C19326400CA35AE /* MacDevLibCOne */ = {
-			isa = PBXGroup;
-			children = (
-				869A49091C19326400CA35AE /* main.m */,
-				869A49181C19340F00CA35AE /* XYZPerson.h */,
-				869A49191C19350500CA35AE /* XYZPerson.m */,
-				86E70F791C1EC9A400448682 /* XYZFilipino.h */,
-				86E70F7A1C1ECA1400448682 /* XYZFilipino.m */,
-				86F3BE671C30FBE00039B300 /* XYZPerson+XYZPersonDisplayAdditions.h */,
-				86F3BE681C30FBE00039B300 /* XYZPerson+XYZPersonDisplayAdditions.m */,
-				86F3BE731C3136CD0039B300 /* XYZPerson_XYZAlien.h */,
-			);
-			path = MacDevLibCOne;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,10 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86F3BE691C30FBE00039B300 /* XYZPerson+XYZPersonDisplayAdditions.m in Sources */,
-				86E70F7B1C1ECA1400448682 /* XYZFilipino.m in Sources */,
-				869A491A1C19350500CA35AE /* XYZPerson.m in Sources */,
-				869A490A1C19326400CA35AE /* main.m in Sources */,
+				8647A2C81C36320B00EC21B1 /* XYZPerson+XYZPersonDisplayAdditions.m in Sources */,
+				8647A2C51C36320B00EC21B1 /* XYZTricycle.m in Sources */,
+				8647A2C61C36320B00EC21B1 /* XYZFilipino.m in Sources */,
+				8647A2C31C36320B00EC21B1 /* main.m in Sources */,
+				8647A2C41C36320B00EC21B1 /* XYZBicycle.m in Sources */,
+				8647A2C71C36320B00EC21B1 /* XYZPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
