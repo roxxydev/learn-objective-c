@@ -40,6 +40,45 @@ static BOOL experimentProtocol() {
     return 0;
 }
 
+static BOOL experimentArray() {
+    // NSArray initialization
+    NSString *strFirstIdx = @"firstObj";
+    NSNumber *numSecondIdx= [[NSNumber alloc] initWithInt: 55];
+    NSNumber *numThirdIdx= [[NSNumber alloc] initWithInt: 8];
+    NSNumber *numFourthIdx= [[NSNumber alloc] initWithInt: 89];
+    NSArray *arrObjects = [NSArray arrayWithObjects:strFirstIdx, numSecondIdx, numThirdIdx, numFourthIdx, nil];
+    
+    if ([arrObjects count] > 0 && [arrObjects containsObject:@89]) {
+        NSLog(@"contains the query object: %@", @89);
+    }
+    
+    int idx = 2;
+    // [arrObjects objectAtIndex:idx] is same as arrObjects[idx]
+    NSLog(@"object at index %d is %@", idx, [arrObjects objectAtIndex:idx]);
+    
+    // replace first index with integer because selector does not respond to string
+    arrObjects = [NSArray arrayWithObjects:numSecondIdx, numSecondIdx, numThirdIdx, numFourthIdx, nil];
+    NSArray *sortedObject = [arrObjects sortedArrayUsingSelector:@selector(compare:)];
+    NSLog(@"object at index %d after sorting is %@", idx, [sortedObject objectAtIndex:idx]);
+    
+    // Initialization using Mutable array
+    NSMutableArray *arrMutableObj = [NSMutableArray array];
+    [arrMutableObj addObject:@"Juan Dela Cruz"];
+    [arrMutableObj addObject:@25];
+    [arrMutableObj addObject:@YES];
+    NSMutableString *address = [NSMutableString stringWithFormat:@"Paransilyo St., Kapasigan, Pasig City"];
+    [arrMutableObj addObject: address];
+    
+    NSUInteger lastIdx = [arrMutableObj count] -1;
+    NSMutableString *addressWithStreetNo = [[NSMutableString alloc] init];
+    [addressWithStreetNo appendFormat: @"%@ %@", @"48", address];
+    [arrMutableObj replaceObjectAtIndex: lastIdx withObject: addressWithStreetNo];
+    
+    NSLog(@"result of using mutable object inside mutable array: %@", [arrMutableObj objectAtIndex: lastIdx]);
+    
+    return 0;
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // Create default person
@@ -81,6 +120,7 @@ int main(int argc, const char * argv[]) {
         
         experimentLiterals();
         experimentProtocol();
+        experimentArray();
     }
     return 0;
 }
