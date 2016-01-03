@@ -89,6 +89,39 @@ static BOOL experimentDictionaries() {
     return 0;
 }
 
+static BOOL experimentCollectionEnumeration() {
+    NSMutableArray *arrMutableObj = [NSMutableArray array];
+    [arrMutableObj addObject:@"first element"];
+    [arrMutableObj addObject:@"second element"];
+    [arrMutableObj addObject:@"third element"];
+    
+    // collection enumeration
+    NSUInteger count = [arrMutableObj count];
+    for (int index=0; index < count; index++) {
+        id eachObject = [arrMutableObj objectAtIndex: index];
+        NSLog(@"for loop object: %@", eachObject);
+    }
+    
+    // collection fast enumeration, same as foreach in C#
+    for (id element in arrMutableObj) {
+        NSLog(@"fast enumeration object: %@", element);
+    }
+    
+    
+    // using fast enumeration with enumerator
+    for (id element in [arrMutableObj reverseObjectEnumerator]) {
+        NSLog(@"for loop object: %@", element);
+    }
+    
+    // using while loop with enumerator
+    /*id eachObject;
+    while ( (eachObject = [[arrMutableObj objectEnumerator] nextObject])) {
+        NSLog(@"while loop with enumerator object: %@", eachObject);
+    }*/
+    
+    return 0;
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // Create default person
@@ -132,6 +165,7 @@ int main(int argc, const char * argv[]) {
         experimentProtocol();
         experimentArray();
         experimentDictionaries();
+        experimentCollectionEnumeration();
     }
     return 0;
 }
