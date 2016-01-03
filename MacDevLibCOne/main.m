@@ -79,6 +79,16 @@ static BOOL experimentArray() {
     return 0;
 }
 
+static BOOL experimentDictionaries() {
+    id someObject = @"someObject";
+    NSString *someValue = @"aValue";
+    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys: someObject, @"anObject",
+                                @"Hello, World!", @"helloString", @42, @"magicNumber", someValue, @"aValue", nil];
+    NSNumber *storedNumber = [dictionary objectForKey: @"magicNumber"];
+    NSLog(@"Dictionary stored object for key 'magicNumber' is %@", storedNumber);
+    return 0;
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // Create default person
@@ -121,6 +131,7 @@ int main(int argc, const char * argv[]) {
         experimentLiterals();
         experimentProtocol();
         experimentArray();
+        experimentDictionaries();
     }
     return 0;
 }
