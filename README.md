@@ -1,0 +1,2 @@
+This project are code exercises of Programming with Objective-C in Apple Developer Library website 
+[Mac Developer Library - Programming with Objective-C](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC)
